@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
     }
 }
 
-if(isset($_POST["update"])){
+if(isset($_POST["update"])){ 
     try{
      $pdo = new PDO($dnsinfo,$user,$pass);
      $sql = "SELECT * FROM bbs WHERE id=?";
